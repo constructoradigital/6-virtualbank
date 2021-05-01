@@ -2,7 +2,7 @@ import React from 'react'
 import {FaBars} from 'react-icons/fa'
 import {MobileIcon, Nav, NavbarContainer, NavItem, NavLinks, NavLogo, NavMenu,NavBtnLink,NavBtn} from './NavbarElements'
 
-export const Navbar = () => {
+export const Navbar = ({toggle}) => {
     return (
         <>
             <Nav>
@@ -10,7 +10,7 @@ export const Navbar = () => {
                     <NavLogo to="/">
                         dolla
                     </NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle}>
                         <FaBars/>
                     </MobileIcon>
                     <NavMenu>

@@ -88,10 +88,9 @@ export const NavBtn = styled.nav`
     display:flex;
     align-items:center;
 
-    @media screen and(max-width:768px){
+    @media screen and (max-width:768px){
         display:none;
     }
-    
 `
 export const NavBtnLink = styled.button`
   border-radius: 50px;
